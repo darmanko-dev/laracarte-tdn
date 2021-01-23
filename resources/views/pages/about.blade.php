@@ -16,7 +16,7 @@
         </div>
 
         <p>
-            Feel free to help to improve the <a href="https://github.com/darmanko-dev/laracarte-tdn/tree/master">source code </a>.
+            Feel free to help to improve the <a href="https://github.com/darmanko-dev/laracarte-tdn/tree/master" target="_blank">source code </a>.
         </p>
         
         <hr>
