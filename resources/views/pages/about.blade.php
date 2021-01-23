@@ -2,8 +2,8 @@
     
 @section('content')
     <div class="container">
-        <h2>What is Laracarte ?</h2>  
-        <p>Laracarte is a clone app of <a href="https://Laramap.com" target="_blank">Laramap</a></p>
+        <h2>What is {{ config('app.name') }} ?</h2>  
+        <p>{{ config('app.name') }} is a clone app of <a href="https://Laramap.com" target="_blank">Laramap</a></p>
         
         <div class="row">
             <div class="col-md-6">
@@ -23,12 +23,12 @@
 
         <h2>What is Laramap?</h2>
 
-        <p>Laramap is the website by which laracarte was inspired :).</p>
+        <p>Laramap is the website by which {{ config('app.name') }} was inspired :).</p>
         <p>More info <a href="https://Laramap.com/p/about">here.</a></p>
 
         <hr>
 
-        <h2>Which tools and service are used in laracarte ?</h2>
+        <h2>Which tools and service are used in {{ config('app.name') }} ?</h2>
 
         <p>Basically it'is built on laravel &amp; bootstrap.But there's a bunch of service used for email and other section. </p>
 
