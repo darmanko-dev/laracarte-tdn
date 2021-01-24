@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\PagesController;
+use App\Mail\ContactMessageCreated;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +23,11 @@ Route::get('/about', [PagesController::class, 'about'])->name('about_path');
 
 
 Route::get('/contact',[ContactsController::class, 'create'])->name('contact_path');
+
+Route::post('/contact',[ContactsController::class, 'store'])->name('contact_path');
+
+Route::get('/test-email', function(){
+    return new ContactMessageCreated('Mosh', 'Mosh@hamadani.com', 'Je suis un prof dev.');
+});
+
 
